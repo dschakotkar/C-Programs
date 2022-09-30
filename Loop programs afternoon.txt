@@ -1,0 +1,53 @@
+1. Write a C program to input a number from user and find Prime factors of the 	 	given number using loop.
+
+
+2.  WAP to generate the max number using the digits of entered number
+
+        4936  -->  9643
+
+3. WAP to Convert Decimal to Binary & Binary to Decimal
+
+
+4. Write a C program to print all Strong numbers between 1 to n.
+
+      If sum of factorial of digits is equal to original number then it is Strong 		 number
+			e.g. 145
+
+5. Write a C program to find the Armstrong number for a given range of number.
+
+6. Write a C program to input a number from user and find Prime factors of the 	 	given number using loop.
+
+7. Enter the number and add the alternate digit from it.
+
+        no=28416   ==> 6+4+2 = 12
+                       1+8 = 9
+
+
+8.  Write a C Program to display the pattern like pyramid using the alphabet. 
+
+         A
+       A B A 
+     A B C B A
+    A B C D C B A 
+
+
+9 . Write a program in C to print the Floyd's Triangle. 
+
+1 
+01
+101 
+0101 
+10101
+
+10. Write a program in C to display the pattern like a diamond. 
+
+    *
+   *** 
+  *****
+ *******
+********* 
+ *******
+  *****
+   ***
+    * 
+

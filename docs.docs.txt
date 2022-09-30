@@ -1,0 +1,60 @@
+/*sample
+jet Jet met Met                 True
+Jet met Met java                False
+*/
+#include<stdio.h>
+#include<string.h>
+int split(char *s, char d,char **w)
+{
+    int i,c=0,k=0;
+    for(i=0;s[i]!='\0';i++)
+    {
+
+        k=0;
+        while(s[i]!=' '&& s[i]!='\0')
+        {
+
+         w[c][k++]=s[i++];
+        }
+
+        w[c][k]='\0';
+        c++;
+        if(s[i]=='\0')
+            break;
+    }
+    return c;
+}
+int check( char *s)
+{
+	int i;
+
+	//char words[10][100];
+
+    char **words;
+    words = (char**)malloc(sizeof(char*)*10);
+    for(i = 0 ; i <10;i++)
+    words[i] = (char*)malloc(100);
+
+
+    int jetcount=0,metcount=0;
+
+    int count=split(strlwr(s),' ',words);
+
+    for(i=0;i<count;i++)
+    {
+        if(strcmp(words[i],"met")==0)
+            metcount++;
+
+        if(strcmp(words[i],"jet")==0)
+            jetcount++;
+
+    }
+    return jetcount==metcount;
+
+}
+int main()
+{
+    char s[100]="Jet met Met java ";
+    printf("%d",check(s));                //1 or 0
+	return 0;
+}
